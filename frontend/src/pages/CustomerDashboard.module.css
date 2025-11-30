@@ -1,0 +1,208 @@
+.dashboardContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboardTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+/* ---------------- Banner Slider ---------------- */
+.newsSection {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  background: #fff;
+}
+
+.newsImage {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.newsImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newsContent {
+  width: 60%;
+  padding: 1.5rem 2rem;
+}
+
+.newsContent h3 {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+}
+
+.newsContent p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ---------------- Info Boxes ---------------- */
+.infoBoxGrid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.infoBox {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.infoBox:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.infoBox img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.infoText {
+  padding: 1rem;
+}
+
+.infoText h4 {
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+
+.infoText p {
+  color: rgb(24, 204, 54);
+  font-weight: bold;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.infoText p:hover {
+  opacity: 0.7;
+}
+
+/* ---------------- Offers Slider ---------------- */
+.sectionTitle {
+  font-size: 20px;
+  margin: 2rem 0 1rem;
+}
+
+.offersSlider {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+}
+
+.offersSlider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.offersSlider::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.offersTrack {
+  display: flex;
+  gap: 1rem;
+}
+
+.offerCard {
+  min-width: 180px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offerCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.offerCard img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.offerCard h4 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 16px;
+  color: #222;
+}
+
+.offerCard p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #18cc36;
+}
+
+/* ---------------- Contact Farmer ---------------- */
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.contactBox img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 900px) {
+  .newsSection {
+    flex-direction: column;
+  }
+  .newsImage, .newsContent {
+    width: 100%;
+  }
+  .infoBox {
+    width: 100%;
+  }
+  .offerCard {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboardTitle {
+    font-size: 22px;
+  }
+  .newsContent h3 {
+    font-size: 18px;
+  }
+  .newsContent p {
+    font-size: 14px;
+  }
+}

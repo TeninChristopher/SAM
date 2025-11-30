@@ -1,0 +1,127 @@
+.purchasePage {
+  width: 100%;
+  min-height: 100vh;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBar {
+  background: #28a745;
+  padding: 24px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  justify-content: center;
+}
+
+/* Left side */
+.main {
+  flex: 2;
+}
+
+.itemCard {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 15px;
+}
+
+.itemImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.itemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qtyControls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.qtyControls button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Right side */
+.summary {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.priceList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.priceItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.confirmBtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

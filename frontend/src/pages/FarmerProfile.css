@@ -1,0 +1,163 @@
+/* Container for the entire profile page */
+.sams-profile-page {
+  background-color: #fff; /* full white background */
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding-top: 120px; /* space for fixed header */
+  display: flex;
+  justify-content: center; /* center card horizontally */
+  align-items: flex-start;
+}
+
+/* Fixed Title Bar */
+.sams-profile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #18cc36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.sams-profile-header .sams-profile-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sams-profile-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sams-profile-home-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.sams-profile-home-btn:hover {
+  transform: scale(1.2);
+}
+
+.sams-profile-dropdown {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sams-profile-dropdown:hover {
+  border-color: #18cc36;
+  box-shadow: 0 0 5px rgba(24, 204, 54, 0.5);
+}
+
+/* Profile Card - Glass/Transparent Style */
+.sams-profile-card {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 100px 30px 30px 30px; /* top padding for profile picture */
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sams-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture */
+.sams-profile-pic-container {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sams-profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #18cc36;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Editable Details */
+.sams-profile-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.sams-profile-detail {
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.sams-profile-detail:hover {
+  background-color: rgba(24, 204, 54, 0.1); /* hover highlight */
+  transform: translateX(5px);
+}
+
+/* Input fields */
+.sams-profile-details input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.sams-profile-details input:focus {
+  border-color: #18cc36;
+  box-shadow: 0 0 5px rgba(24, 204, 54, 0.5);
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sams-profile-card {
+    width: 95%;
+    padding: 120px 20px 20px 20px;
+  }
+
+  .sams-profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sams-profile-card {
+    padding: 140px 15px 15px 15px;
+  }
+
+  .sams-profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+}

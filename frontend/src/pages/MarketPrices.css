@@ -1,0 +1,114 @@
+.market-container {
+  padding: 25px;
+  background-color: #f5f8fa;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.market-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.market-header h1 {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 220px;
+}
+
+.dropdown-btn {
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.arrow {
+  float: right;
+  color: #4caf50;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 10;
+}
+
+.dropdown-list li {
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdown-list li:hover {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.market-table th,
+.market-table td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.market-table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.market-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.market-table tr:hover {
+  background-color: #e8f5e9;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 1.1rem;
+}

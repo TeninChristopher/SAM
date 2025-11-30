@@ -1,0 +1,39 @@
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-color: #b1b1b1;
+  margin: 0;
+  color: #2f4f4f;
+}
+/*
+.app {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.dashboard-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.dashboard-card p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+*/

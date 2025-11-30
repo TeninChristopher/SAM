@@ -1,0 +1,171 @@
+/* Modern Reset & Typography */
+.sell-crop-page {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #1e293b;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Light background */
+}
+
+/* Headings */
+h1 {
+  color: #0d9488; /* Teal/Emerald color for a natural feel */
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  color: #334155;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* Form Container */
+.sell-crop-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  margin-bottom: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle but noticeable shadow */
+}
+
+.sell-crop-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+/* Form Inputs and Selects */
+.sell-crop-form input,
+.sell-crop-form select {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fefefe;
+  font-size: 1rem;
+}
+
+.sell-crop-form input:focus,
+.sell-crop-form select:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2); /* Focus ring */
+  outline: none;
+}
+
+.sell-crop-form input:disabled,
+.sell-crop-form select:disabled {
+  background-color: #f1f5f9;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Price Preview */
+.sell-crop-form p {
+  align-self: center; /* Align with other elements */
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ecfdf5; /* Light green background */
+  border-left: 4px solid #0d9488;
+  font-size: 1rem;
+}
+
+/* Button */
+.sell-crop-form button {
+  grid-column: 1 / -1; /* Full width */
+  padding: 12px 20px;
+  background-color: #0d9488;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.sell-crop-form button:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+.sell-crop-form button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.sell-crop-form button:active:not(:disabled) {
+  transform: translateY(1px); /* Subtle press effect */
+}
+
+/* Separator */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 40px 0;
+}
+
+/* Market List */
+.market-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.crop-card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.crop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.08);
+}
+
+.crop-card h3 {
+  margin: 0 0 10px 0;
+  color: #0d9488;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.crop-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* Optional: Emphasize key data points */
+.crop-card p strong {
+  color: #1e293b;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .sell-crop-form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 15px;
+  }
+}
+
+/* The original .crop-list class seems to be for a different structure based on the provided JSX. 
+   I have restructured the .market-list and .crop-card to be more modern and responsive. 
+   I removed the image-related styles since there are no images in the component.
+*/

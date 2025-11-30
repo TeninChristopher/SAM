@@ -1,0 +1,1772 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "users"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "farmer"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "customer"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "market"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "weatherdata"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "weatherprediction"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "cartitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "customeraction"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "customerrecommendation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "cropprices"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "farmer_app",
+        "model": "dailycropforecast"
+    }
+},
+{
+    "model": "farmer_app.users",
+    "pk": 1,
+    "fields": {
+        "name": "user2",
+        "email": "user2@gmail.com",
+        "password": "testuser2",
+        "role": "customer"
+    }
+},
+{
+    "model": "farmer_app.users",
+    "pk": 2,
+    "fields": {
+        "name": "user1",
+        "email": "user1@gmail.com",
+        "password": "testuser2",
+        "role": "farmer"
+    }
+},
+{
+    "model": "farmer_app.farmer",
+    "pk": 1,
+    "fields": {
+        "user": 2
+    }
+},
+{
+    "model": "farmer_app.customer",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "discount_sensitivity": 0.0,
+        "price_elasticity": 0.8,
+        "stock_urgency": 0.85,
+        "last_profiled": "2025-11-27T07:46:06.583Z"
+    }
+},
+{
+    "model": "farmer_app.product",
+    "pk": 1,
+    "fields": {
+        "farmer": 1,
+        "name": "Wheat",
+        "quantity": 0.0,
+        "reap_date": "2025-11-25"
+    }
+},
+{
+    "model": "farmer_app.product",
+    "pk": 2,
+    "fields": {
+        "farmer": 1,
+        "name": "Wheat",
+        "quantity": 0.0,
+        "reap_date": "2025-11-21"
+    }
+},
+{
+    "model": "farmer_app.market",
+    "pk": 1,
+    "fields": {
+        "farmer": 1,
+        "product": 1,
+        "product_name": "Wheat",
+        "weight": 2.0,
+        "stock": 3,
+        "discount": 0.0,
+        "price": 20.0,
+        "date_added": "2025-11-26T07:48:55.787Z"
+    }
+},
+{
+    "model": "farmer_app.market",
+    "pk": 2,
+    "fields": {
+        "farmer": 1,
+        "product": 2,
+        "product_name": "Wheat",
+        "weight": 2.0,
+        "stock": 5,
+        "discount": 0.0,
+        "price": 411.16,
+        "date_added": "2025-11-26T08:38:44.902Z"
+    }
+},
+{
+    "model": "farmer_app.weatherdata",
+    "pk": 1,
+    "fields": {
+        "date": "2025-11-27",
+        "temperature": 24.6,
+        "cloudcover": 100.0,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 1,
+    "fields": {
+        "date": "2025-11-28",
+        "temperature": 24.5,
+        "cloudcover": 72.7,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 2,
+    "fields": {
+        "date": "2025-11-29",
+        "temperature": 25.1,
+        "cloudcover": 70.4,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 3,
+    "fields": {
+        "date": "2025-11-30",
+        "temperature": 25.6,
+        "cloudcover": 68.2,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 4,
+    "fields": {
+        "date": "2025-12-01",
+        "temperature": 26.1,
+        "cloudcover": 65.9,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 5,
+    "fields": {
+        "date": "2025-12-02",
+        "temperature": 26.6,
+        "cloudcover": 63.7,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 6,
+    "fields": {
+        "date": "2025-12-03",
+        "temperature": 27.2,
+        "cloudcover": 61.4,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.weatherprediction",
+    "pk": 7,
+    "fields": {
+        "date": "2025-12-04",
+        "temperature": 27.7,
+        "cloudcover": 59.2,
+        "precipitation": 0.0
+    }
+},
+{
+    "model": "farmer_app.cart",
+    "pk": 1,
+    "fields": {
+        "customer": 1,
+        "created_at": "2025-11-26T07:25:45.539Z"
+    }
+},
+{
+    "model": "farmer_app.cartitem",
+    "pk": 2,
+    "fields": {
+        "cart": 1,
+        "market_item": 2,
+        "quantity": 1
+    }
+},
+{
+    "model": "farmer_app.customeraction",
+    "pk": 1,
+    "fields": {
+        "customer_id": 1,
+        "crop": "Wheat",
+        "action": "ADD",
+        "quantity": 2,
+        "price_at_action": "20.00",
+        "discount_at_action": "0.00",
+        "stock_at_action": 5,
+        "timestamp": "2025-11-26T07:49:09.791Z"
+    }
+},
+{
+    "model": "farmer_app.customeraction",
+    "pk": 2,
+    "fields": {
+        "customer_id": 1,
+        "crop": "Wheat",
+        "action": "PURCHASE",
+        "quantity": 2,
+        "price_at_action": "20.00",
+        "discount_at_action": "0.00",
+        "stock_at_action": 3,
+        "timestamp": "2025-11-26T07:49:13.758Z"
+    }
+},
+{
+    "model": "farmer_app.customeraction",
+    "pk": 3,
+    "fields": {
+        "customer_id": 1,
+        "crop": "Wheat",
+        "action": "ADD",
+        "quantity": 1,
+        "price_at_action": "411.16",
+        "discount_at_action": "0.00",
+        "stock_at_action": 5,
+        "timestamp": "2025-11-27T07:47:06.409Z"
+    }
+},
+{
+    "model": "farmer_app.customerrecommendation",
+    "pk": 1,
+    "fields": {
+        "customer": 1,
+        "crop": "Wheat",
+        "purchase_prob": 0.99
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 15,
+    "fields": {
+        "crop": "Rice",
+        "year": 2025,
+        "predicted_yield": 5.849539112784755,
+        "synthetic_price": 256.43,
+        "created_at": "2025-11-27T04:21:49.976Z"
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 16,
+    "fields": {
+        "crop": "Wheat",
+        "year": 2025,
+        "predicted_yield": 5.872873210884861,
+        "synthetic_price": 204.33,
+        "created_at": "2025-11-27T04:21:49.985Z"
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 17,
+    "fields": {
+        "crop": "Maize",
+        "year": 2025,
+        "predicted_yield": 5.917071184084903,
+        "synthetic_price": 135.2,
+        "created_at": "2025-11-27T04:21:49.996Z"
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 18,
+    "fields": {
+        "crop": "Barley",
+        "year": 2025,
+        "predicted_yield": 5.872873210884861,
+        "synthetic_price": 127.71,
+        "created_at": "2025-11-27T04:21:50.005Z"
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 19,
+    "fields": {
+        "crop": "Cotton",
+        "year": 2025,
+        "predicted_yield": 5.868574785853372,
+        "synthetic_price": 306.72,
+        "created_at": "2025-11-27T04:21:50.015Z"
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 20,
+    "fields": {
+        "crop": "Soybeans",
+        "year": 2025,
+        "predicted_yield": 5.874909753409975,
+        "synthetic_price": 272.34,
+        "created_at": "2025-11-27T04:21:50.030Z"
+    }
+},
+{
+    "model": "farmer_app.cropprices",
+    "pk": 21,
+    "fields": {
+        "crop": "Groundnuts",
+        "year": 2025,
+        "predicted_yield": 5.872873210884861,
+        "synthetic_price": 238.38,
+        "created_at": "2025-11-27T04:21:50.040Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 1,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-11-27",
+        "price_estimate": 256.38,
+        "created_at": "2025-11-27T04:21:50.062Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 2,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-11-28",
+        "price_estimate": 257.2,
+        "created_at": "2025-11-27T04:21:50.071Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 3,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-11-29",
+        "price_estimate": 256.68,
+        "created_at": "2025-11-27T04:21:50.084Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 4,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-11-30",
+        "price_estimate": 255.65,
+        "created_at": "2025-11-27T04:21:50.095Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 5,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-12-01",
+        "price_estimate": 255.71,
+        "created_at": "2025-11-27T04:21:50.104Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 6,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-12-02",
+        "price_estimate": 255.02,
+        "created_at": "2025-11-27T04:21:50.113Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 7,
+    "fields": {
+        "crop": "Rice",
+        "date": "2025-12-03",
+        "price_estimate": 254.14,
+        "created_at": "2025-11-27T04:21:50.121Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 8,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-11-27",
+        "price_estimate": 205.1,
+        "created_at": "2025-11-27T04:21:50.130Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 9,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-11-28",
+        "price_estimate": 203.8,
+        "created_at": "2025-11-27T04:21:50.138Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 10,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-11-29",
+        "price_estimate": 203.07,
+        "created_at": "2025-11-27T04:21:50.147Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 11,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-11-30",
+        "price_estimate": 201.83,
+        "created_at": "2025-11-27T04:21:50.157Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 12,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-12-01",
+        "price_estimate": 200.05,
+        "created_at": "2025-11-27T04:21:50.167Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 13,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-12-02",
+        "price_estimate": 197.37,
+        "created_at": "2025-11-27T04:21:50.175Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 14,
+    "fields": {
+        "crop": "Wheat",
+        "date": "2025-12-03",
+        "price_estimate": 194.69,
+        "created_at": "2025-11-27T04:21:50.184Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 15,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-11-27",
+        "price_estimate": 135.05,
+        "created_at": "2025-11-27T04:21:50.197Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 16,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-11-28",
+        "price_estimate": 136.0,
+        "created_at": "2025-11-27T04:21:50.208Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 17,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-11-29",
+        "price_estimate": 136.72,
+        "created_at": "2025-11-27T04:21:50.217Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 18,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-11-30",
+        "price_estimate": 137.52,
+        "created_at": "2025-11-27T04:21:50.228Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 19,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-12-01",
+        "price_estimate": 139.06,
+        "created_at": "2025-11-27T04:21:50.237Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 20,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-12-02",
+        "price_estimate": 141.55,
+        "created_at": "2025-11-27T04:21:50.247Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 21,
+    "fields": {
+        "crop": "Maize",
+        "date": "2025-12-03",
+        "price_estimate": 143.21,
+        "created_at": "2025-11-27T04:21:50.255Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 22,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-11-27",
+        "price_estimate": 127.5,
+        "created_at": "2025-11-27T04:21:50.266Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 23,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-11-28",
+        "price_estimate": 127.81,
+        "created_at": "2025-11-27T04:21:50.275Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 24,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-11-29",
+        "price_estimate": 127.69,
+        "created_at": "2025-11-27T04:21:50.284Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 25,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-11-30",
+        "price_estimate": 127.54,
+        "created_at": "2025-11-27T04:21:50.292Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 26,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-12-01",
+        "price_estimate": 126.19,
+        "created_at": "2025-11-27T04:21:50.301Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 27,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-12-02",
+        "price_estimate": 125.25,
+        "created_at": "2025-11-27T04:21:50.312Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 28,
+    "fields": {
+        "crop": "Barley",
+        "date": "2025-12-03",
+        "price_estimate": 124.1,
+        "created_at": "2025-11-27T04:21:50.321Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 29,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-11-27",
+        "price_estimate": 306.85,
+        "created_at": "2025-11-27T04:21:50.332Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 30,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-11-28",
+        "price_estimate": 305.15,
+        "created_at": "2025-11-27T04:21:50.340Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 31,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-11-29",
+        "price_estimate": 303.76,
+        "created_at": "2025-11-27T04:21:50.351Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 32,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-11-30",
+        "price_estimate": 303.88,
+        "created_at": "2025-11-27T04:21:50.361Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 33,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-12-01",
+        "price_estimate": 304.22,
+        "created_at": "2025-11-27T04:21:50.368Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 34,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-12-02",
+        "price_estimate": 302.08,
+        "created_at": "2025-11-27T04:21:50.378Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 35,
+    "fields": {
+        "crop": "Cotton",
+        "date": "2025-12-03",
+        "price_estimate": 300.14,
+        "created_at": "2025-11-27T04:21:50.387Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 36,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-11-27",
+        "price_estimate": 273.3,
+        "created_at": "2025-11-27T04:21:50.397Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 37,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-11-28",
+        "price_estimate": 274.1,
+        "created_at": "2025-11-27T04:21:50.404Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 38,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-11-29",
+        "price_estimate": 274.35,
+        "created_at": "2025-11-27T04:21:50.414Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 39,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-11-30",
+        "price_estimate": 274.28,
+        "created_at": "2025-11-27T04:21:50.423Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 40,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-12-01",
+        "price_estimate": 275.62,
+        "created_at": "2025-11-27T04:21:50.433Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 41,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-12-02",
+        "price_estimate": 274.78,
+        "created_at": "2025-11-27T04:21:50.441Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 42,
+    "fields": {
+        "crop": "Soybeans",
+        "date": "2025-12-03",
+        "price_estimate": 273.95,
+        "created_at": "2025-11-27T04:21:50.452Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 43,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-11-27",
+        "price_estimate": 238.18,
+        "created_at": "2025-11-27T04:21:50.463Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 44,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-11-28",
+        "price_estimate": 239.36,
+        "created_at": "2025-11-27T04:21:50.472Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 45,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-11-29",
+        "price_estimate": 240.24,
+        "created_at": "2025-11-27T04:21:50.482Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 46,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-11-30",
+        "price_estimate": 239.93,
+        "created_at": "2025-11-27T04:21:50.490Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 47,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-12-01",
+        "price_estimate": 240.37,
+        "created_at": "2025-11-27T04:21:50.500Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 48,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-12-02",
+        "price_estimate": 241.64,
+        "created_at": "2025-11-27T04:21:50.509Z"
+    }
+},
+{
+    "model": "farmer_app.dailycropforecast",
+    "pk": 49,
+    "fields": {
+        "crop": "Groundnuts",
+        "date": "2025-12-03",
+        "price_estimate": 244.07,
+        "created_at": "2025-11-27T04:21:50.517Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add users",
+        "content_type": [
+            "farmer_app",
+            "users"
+        ],
+        "codename": "add_users"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change users",
+        "content_type": [
+            "farmer_app",
+            "users"
+        ],
+        "codename": "change_users"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete users",
+        "content_type": [
+            "farmer_app",
+            "users"
+        ],
+        "codename": "delete_users"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view users",
+        "content_type": [
+            "farmer_app",
+            "users"
+        ],
+        "codename": "view_users"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add farmer",
+        "content_type": [
+            "farmer_app",
+            "farmer"
+        ],
+        "codename": "add_farmer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change farmer",
+        "content_type": [
+            "farmer_app",
+            "farmer"
+        ],
+        "codename": "change_farmer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete farmer",
+        "content_type": [
+            "farmer_app",
+            "farmer"
+        ],
+        "codename": "delete_farmer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view farmer",
+        "content_type": [
+            "farmer_app",
+            "farmer"
+        ],
+        "codename": "view_farmer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add customer",
+        "content_type": [
+            "farmer_app",
+            "customer"
+        ],
+        "codename": "add_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change customer",
+        "content_type": [
+            "farmer_app",
+            "customer"
+        ],
+        "codename": "change_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete customer",
+        "content_type": [
+            "farmer_app",
+            "customer"
+        ],
+        "codename": "delete_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view customer",
+        "content_type": [
+            "farmer_app",
+            "customer"
+        ],
+        "codename": "view_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add product",
+        "content_type": [
+            "farmer_app",
+            "product"
+        ],
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change product",
+        "content_type": [
+            "farmer_app",
+            "product"
+        ],
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete product",
+        "content_type": [
+            "farmer_app",
+            "product"
+        ],
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view product",
+        "content_type": [
+            "farmer_app",
+            "product"
+        ],
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add market",
+        "content_type": [
+            "farmer_app",
+            "market"
+        ],
+        "codename": "add_market"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change market",
+        "content_type": [
+            "farmer_app",
+            "market"
+        ],
+        "codename": "change_market"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete market",
+        "content_type": [
+            "farmer_app",
+            "market"
+        ],
+        "codename": "delete_market"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view market",
+        "content_type": [
+            "farmer_app",
+            "market"
+        ],
+        "codename": "view_market"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add weather data",
+        "content_type": [
+            "farmer_app",
+            "weatherdata"
+        ],
+        "codename": "add_weatherdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change weather data",
+        "content_type": [
+            "farmer_app",
+            "weatherdata"
+        ],
+        "codename": "change_weatherdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete weather data",
+        "content_type": [
+            "farmer_app",
+            "weatherdata"
+        ],
+        "codename": "delete_weatherdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view weather data",
+        "content_type": [
+            "farmer_app",
+            "weatherdata"
+        ],
+        "codename": "view_weatherdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add weather prediction",
+        "content_type": [
+            "farmer_app",
+            "weatherprediction"
+        ],
+        "codename": "add_weatherprediction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change weather prediction",
+        "content_type": [
+            "farmer_app",
+            "weatherprediction"
+        ],
+        "codename": "change_weatherprediction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete weather prediction",
+        "content_type": [
+            "farmer_app",
+            "weatherprediction"
+        ],
+        "codename": "delete_weatherprediction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view weather prediction",
+        "content_type": [
+            "farmer_app",
+            "weatherprediction"
+        ],
+        "codename": "view_weatherprediction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add cart",
+        "content_type": [
+            "farmer_app",
+            "cart"
+        ],
+        "codename": "add_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change cart",
+        "content_type": [
+            "farmer_app",
+            "cart"
+        ],
+        "codename": "change_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete cart",
+        "content_type": [
+            "farmer_app",
+            "cart"
+        ],
+        "codename": "delete_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view cart",
+        "content_type": [
+            "farmer_app",
+            "cart"
+        ],
+        "codename": "view_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add cart item",
+        "content_type": [
+            "farmer_app",
+            "cartitem"
+        ],
+        "codename": "add_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change cart item",
+        "content_type": [
+            "farmer_app",
+            "cartitem"
+        ],
+        "codename": "change_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete cart item",
+        "content_type": [
+            "farmer_app",
+            "cartitem"
+        ],
+        "codename": "delete_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view cart item",
+        "content_type": [
+            "farmer_app",
+            "cartitem"
+        ],
+        "codename": "view_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add customer action",
+        "content_type": [
+            "farmer_app",
+            "customeraction"
+        ],
+        "codename": "add_customeraction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change customer action",
+        "content_type": [
+            "farmer_app",
+            "customeraction"
+        ],
+        "codename": "change_customeraction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete customer action",
+        "content_type": [
+            "farmer_app",
+            "customeraction"
+        ],
+        "codename": "delete_customeraction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view customer action",
+        "content_type": [
+            "farmer_app",
+            "customeraction"
+        ],
+        "codename": "view_customeraction"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add customer recommendation",
+        "content_type": [
+            "farmer_app",
+            "customerrecommendation"
+        ],
+        "codename": "add_customerrecommendation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change customer recommendation",
+        "content_type": [
+            "farmer_app",
+            "customerrecommendation"
+        ],
+        "codename": "change_customerrecommendation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete customer recommendation",
+        "content_type": [
+            "farmer_app",
+            "customerrecommendation"
+        ],
+        "codename": "delete_customerrecommendation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view customer recommendation",
+        "content_type": [
+            "farmer_app",
+            "customerrecommendation"
+        ],
+        "codename": "view_customerrecommendation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add crop prices",
+        "content_type": [
+            "farmer_app",
+            "cropprices"
+        ],
+        "codename": "add_cropprices"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change crop prices",
+        "content_type": [
+            "farmer_app",
+            "cropprices"
+        ],
+        "codename": "change_cropprices"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete crop prices",
+        "content_type": [
+            "farmer_app",
+            "cropprices"
+        ],
+        "codename": "delete_cropprices"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view crop prices",
+        "content_type": [
+            "farmer_app",
+            "cropprices"
+        ],
+        "codename": "view_cropprices"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add daily crop forecast",
+        "content_type": [
+            "farmer_app",
+            "dailycropforecast"
+        ],
+        "codename": "add_dailycropforecast"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change daily crop forecast",
+        "content_type": [
+            "farmer_app",
+            "dailycropforecast"
+        ],
+        "codename": "change_dailycropforecast"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete daily crop forecast",
+        "content_type": [
+            "farmer_app",
+            "dailycropforecast"
+        ],
+        "codename": "delete_dailycropforecast"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view daily crop forecast",
+        "content_type": [
+            "farmer_app",
+            "dailycropforecast"
+        ],
+        "codename": "view_dailycropforecast"
+    }
+}
+]

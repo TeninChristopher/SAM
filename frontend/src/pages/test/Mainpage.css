@@ -1,0 +1,21 @@
+.body{
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    background-color: black;
+}
+
+.part-a{
+    background-color: aqua;
+    flex: 7;
+}
+
+.part-b{
+    background-color: rgb(251, 255, 0);
+    flex: 7;
+}

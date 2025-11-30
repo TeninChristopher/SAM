@@ -1,0 +1,206 @@
+.main {
+  background-color: #f5fff5;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Header Overlay ---------- */
+.overlay-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(24, 204, 54);
+}
+
+.overlay-1-title {
+  padding-top: 2px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.overlay-1-user {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.overlay-1-loginbox, .overlay-1-signupbox {
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ---------- Part A: Full Background Images + Hover Panels ---------- */
+
+.part-a {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.9;
+}
+
+.image-flex {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 85vh;
+}
+
+/* Each column image container */
+.image-box {
+  width: 33.33%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add your background images */
+.img-1 {
+  background-image: url("../assets/farmer-img-1.jpg");
+}
+
+.img-2 {
+  background-image: url("../assets/farmer-img-2.1.jpg");
+}
+
+.img-3 {
+  background-image: url("../assets/farmer-img-3.jpg");
+}
+
+/* Hover bottom sliding shadow panel */
+.hover-panel {
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 20px;
+  transition: bottom 0.35s ease-in-out;
+}
+
+.hover-panel h2{
+  color: aqua;
+}
+
+/* Hover effect */
+.image-box:hover .hover-panel {
+  bottom: 0;
+}
+
+/* Reduce About Us opacity when hovering over images */
+.image-box:hover ~ .title {
+  opacity: 0;
+}
+
+/* Centered About Us title */
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ---------- Part B: Contact ---------- */
+.part-b {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fff5;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+  gap: 40px;
+}
+
+.contact-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #188c36;
+}
+
+.contact-text p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #18cc36;
+  box-shadow: 0 0 5px rgba(24, 204, 54, 0.5);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #18cc36;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #14a32e;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    gap: 25px;
+  }
+
+  .contact-text h2 {
+    font-size: 36px;
+  }
+}

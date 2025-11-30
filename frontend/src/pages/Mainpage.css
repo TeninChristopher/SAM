@@ -1,0 +1,22 @@
+/* 🌾 Layout */
+.farmer-dashboard-container {
+  display: flex;
+  background: #f8f9fb;
+  min-height: 100vh;
+  padding-top: 70px; /* avoid overlap with fixed bar */
+  transition: all 0.3s ease;
+}
+
+.dashboard-main {
+  background: #f8f9fb;
+  min-height: 100vh;
+  margin-left: 220px;
+  padding: 3rem 2rem;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* when sidebar collapses */
+.dashboard-main.collapsed {
+  margin-left: 70px;
+}
